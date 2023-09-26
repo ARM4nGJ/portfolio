@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+    outline: none;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+
+}
+
+.bubble  {
+    display: block;
+    position: absolute;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    bottom: 100%;
+    animation-name: animY;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    /* border: 2px solid rgb(0, 255, 21); */
+
+}
+
+.bubble-dis1 {
+    border-radius: 0;
+    transition: 0.2s;
+}
+
+.bubble-dis2 {
+    height: 0;
+    transition: 0.2s;
+}
+
+.bubble-dis3 {
+    /* transform: rotate(720deg);  */
+    opacity: 0;
+    transition: 0.2s;
+}
+
+@keyframes animY {
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+header,
+header {
+    color: rgb(255, 255, 255);
+    font-weight:bold ;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding-left: 30px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    z-index: 10000000000000000000000;
+}
+
+.box1
+{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 42);
+    margin-left: auto;
+}
+
+.box
+{
+    display: inline-block;
+    
+}
+
+menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink;background: rgb(2,0,36); */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    color: red;
+}
+
+section {
+    padding: 20px;
+    width: 400px;
+    /* background-color: rgba(0, 0, 0, 0.925); */
+    background: linear-gradient(90deg, rgb(23, 23, 171) 0%, rgb(1, 1, 255) 50%);
+    z-index: 2;
+    color: white;
+    border-radius: 32px;
+}
+
+
+section button{
+    margin-top: 20px;
+    float: right;
+    padding: 8px 30px;
+    background-color: rgba(135, 207, 235, 0.1);
+    color: white;
+    backdrop-filter: blur(100px);
+    transition: 0.3s background-color;
+    border: 1px solid white;
+}
+
+section button:hover{
+    background-color: rgb(0, 10, 157);
+    cursor: pointer;
+}
+
+#game_over{
+    display: none;
+}
+.box-red
+{
+    background-color: rgb(255, 0, 0);
+}

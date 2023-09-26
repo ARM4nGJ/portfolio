@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbles-Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bd">
+    <menu id="menu">
+        <section>
+            <label id="difficulty">Difficulty: </label> &nbsp;&nbsp;
+            <input type="radio" checked="true" name="diff" id="l1"><label for="l1">&nbsp;Easy</label>&nbsp;&nbsp;
+            <input type="radio" name="diff" id="l2"><label for="l2">&nbsp;Medium</label>&nbsp;&nbsp;
+            <input type="radio" name="diff" id="l3"><label for="l3">&nbsp;Hard</label>
+            <br>
+            <br>
+            <button id="btn">OK</button>
+        </section>
+    </menu>
+
+    <menu id="game_over">
+        <section>
+            <label style="text-align: center; display: block; font-size: 20px;">Game Over</label> &nbsp;&nbsp;
+            <br>
+            <label>Total Bubbles : </label><label id="total_bubbles"></label><br><br>
+            <label>Your Score : </label><label id="score"></label><br><br>
+            <label>Total Loss : </label><label id="loss"></label><br><br>
+            <button id="btn1">OK</button>
+        </section>
+    </menu>
+
+    <header>
+        Score : <label id="lbl">0</label> <br>
+        Loss : <label id="lbl2">0</label>
+        <br>
+
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+
+        <div class="box">
+            <div class="box1"></div>
+        </div>
+
+
+    </header>
+    <script src="file.js"></script>
+</body>
+
+</html>
